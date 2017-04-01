@@ -10,7 +10,7 @@ class FtpClient(object):
 
     def help(self):
         msg = '''
-        ls
+        ls/dir
         pwd
         cd ../..
         get filename
@@ -19,7 +19,7 @@ class FtpClient(object):
         print(msg)
 
     def connect(self, ip, port):
-        self.client.connect(ip, port)
+        self.client.connect((ip, port))
 
     def interactive(self):
         while True:
@@ -43,8 +43,8 @@ class FtpClient(object):
                 "filesize": filesize,
                 "overridden": True
             }
-            self.client.send((json.dump(msg_dic)).encode("utf-8"))
-            print("send", (json.dump(msg_dic)).encode("utf-8"))
+            self.client.send((json.dumps(msg_dic)).encode("utf-8"))
+            print("send", (json.dumps(msg_dic)).encode("utf-8"))
 
             # 防止粘包 等服务器确认
             server_response = self.client.recv(1024)
@@ -58,20 +58,32 @@ class FtpClient(object):
         cmd_split = args[0].split()
         if len(cmd_split) > 1:
             filename = cmd_split[1]
-            new_filename = cmd_split[2]
-            if len(str(new_filename).strip()) <= 0:
+            if len(cmd_split) > 2:
+                new_filename = cmd_split[2]
+            else:
                 # 获取新文件名 如果没有设置就默认采用 原文件名+_new
-                new_filename = filename.split('.')[0] + "_new" + filename.split('.')[1]
+                new_filename = filename.split('.')[0] + "_new" + "." + filename.split('.')[1]
             msg_dic = {
                 "action": "get",
-                "filename": filename,
-                "overridden": True
+                "filename": filename
             }
-            self.client.send(json.dump(msg_dic).encode())
+            self.client.send(json.dumps(msg_dic).encode())
             server_response = self.client.recv(1024)  # 这里服务器返回一个dic 包含文件信息
             print("server response:", server_response)
+            server_response_dic=json.loads(server_response.decode())
             self.client.send(str("ready to recv file").encode())
             # TODO:这下面应该解包json反馈的数据 得到文件大小 以及文件信息 等 最后循环接收数据 并且写入到文件中
+            file_total_size = int(server_response_dic["file_size"])
+            received_size = 0
+            f= open(new_filename, "wb")
+            while received_size < file_total_size:
+                data = self.client.recv(1024)
+                received_size += len(data)
+                f.write(data)
+            else:
+                print("file recv done", received_size, file_total_size)
+                f.close()
+
             '''
             file_total_size = int(server_response.decode())
              received_size = 0
