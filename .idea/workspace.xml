@@ -11,7 +11,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/python_study$ftp_socket_server.coverage" NAME="ftp_socket_server Coverage Results" MODIFIED="1491033288589" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/s_socket" />
-    <SUITE FILE_PATH="coverage/python_study$.coverage" NAME="信号量 Coverage Results" MODIFIED="1491385899794" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/s_threading" />
+    <SUITE FILE_PATH="coverage/python_study$.coverage" NAME="多进程 Coverage Results" MODIFIED="1491452774879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/s_threading" />
     <SUITE FILE_PATH="coverage/python_study$ftp_socket_client.coverage" NAME="ftp_socket_client Coverage Results" MODIFIED="1491033291986" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/s_socket" />
     <SUITE FILE_PATH="coverage/python_study$threading_01.coverage" NAME="threading_01 Coverage Results" MODIFIED="1491382874472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/s_threading" />
   </component>
@@ -33,13 +33,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="信号量.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="信号量.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/s_threading/信号量.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="4" column="50" lean-forward="false" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
+            <state relative-caret-position="540">
+              <caret line="18" column="36" lean-forward="true" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
               <folding>
                 <element signature="e#16#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="多进程.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/s_threading/多进程.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <folding>
+                <element signature="e#16#38#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -71,6 +83,7 @@
         <option value="$PROJECT_DIR$/s_socket/ftp_socket_server.py" />
         <option value="$PROJECT_DIR$/s_threading/threading_01.py" />
         <option value="$PROJECT_DIR$/s_threading/信号量.py" />
+        <option value="$PROJECT_DIR$/s_threading/多进程.py" />
       </list>
     </option>
   </component>
@@ -141,7 +154,7 @@
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
   </component>
-  <component name="RunManager" selected="Python.信号量">
+  <component name="RunManager" selected="Python.多进程">
     <configuration default="false" name="ftp_socket_client" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -210,6 +223,24 @@
       <module name="python_study" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/s_threading/信号量.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="多进程" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/s_threading" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="python_study" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/s_threading/多进程.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -428,18 +459,20 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.ftp_socket_client" />
       <item index="1" class="java.lang.String" itemvalue="Python.ftp_socket_server" />
       <item index="2" class="java.lang.String" itemvalue="Python.threading_01" />
       <item index="3" class="java.lang.String" itemvalue="Python.信号量" />
+      <item index="4" class="java.lang.String" itemvalue="Python.多进程" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python.信号量" />
-        <item index="1" class="java.lang.String" itemvalue="Python.threading_01" />
-        <item index="2" class="java.lang.String" itemvalue="Python.ftp_socket_client" />
-        <item index="3" class="java.lang.String" itemvalue="Python.ftp_socket_server" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.多进程" />
+        <item index="1" class="java.lang.String" itemvalue="Python.信号量" />
+        <item index="2" class="java.lang.String" itemvalue="Python.threading_01" />
+        <item index="3" class="java.lang.String" itemvalue="Python.ftp_socket_client" />
+        <item index="4" class="java.lang.String" itemvalue="Python.ftp_socket_server" />
       </list>
     </recent_temporary>
   </component>
@@ -457,7 +490,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15064102" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -613,12 +646,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://C:/Python36/Lib/multiprocessing/spawn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="135" column="0" lean-forward="false" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/s_threading/信号量.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4" column="50" lean-forward="false" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
+        <state relative-caret-position="540">
+          <caret line="18" column="36" lean-forward="true" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
           <folding>
             <element signature="e#16#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/s_threading/多进程.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="e#16#38#0" expanded="true" />
           </folding>
         </state>
       </provider>

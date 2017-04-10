@@ -11,12 +11,12 @@ def run(num):
     print("run the thread:%s\n"%num)
     semaphore.release()
 
-semaphore=threading.BoundedSemaphore(5)
-for  i in range(20):
-    t1= threading.Thread(target=run, args=(i,))
+semaphore = threading.BoundedSemaphore(5)
+for i in range(20):
+    t1 = threading.Thread(target=run, args=(i,))
     t1.start()
 
-while threading.active_count()!=1:
+while threading.active_count() != 1:
     pass
 else:
     print("all done...")
