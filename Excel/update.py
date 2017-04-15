@@ -7,6 +7,7 @@ import datetime
 from Oracle_helper import oracle_helper
 
 h=oracle_helper('dsjky/quickhigh@192.168.2.105:1521/DSJKY')
+
 # data= xlrd.open_workbook('D:\\excel\\wuzikapian.xls')
 table = h.executeData("select * from TB_FDN_MATERIALS_BASIS_DATA")
 dw=h.executeData("select ZCBZ from TB_TEMP_INTAKE group by ZCBZ")
