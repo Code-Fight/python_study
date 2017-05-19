@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 # Author zfCode
 import xlrd
+import datetime
 from Oracle_helper import oracle_helper
 
 h=oracle_helper('dsjky/quickhigh@192.168.2.105:1521/DSJKY')
@@ -16,6 +17,9 @@ for i in range(nrows):
     # continue
 
     print(table.row_values(i)[20])
+
+    # ccrq= xlrd.xldate.xldate_as_datetime(table.row_values(i)[20], 0).strftime('%Y-%m-%d') if len(str(table.row_values(i)[20]).replace('\xa0', '').strip()) > 0 else ""
+    # ccrq
 
 
     sql='''Insert into DSJKY.TB_FDN_MATERIALS_BASIS_DATA (
