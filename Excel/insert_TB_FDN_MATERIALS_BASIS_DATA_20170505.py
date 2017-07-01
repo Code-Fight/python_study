@@ -2,9 +2,9 @@
 # Author zfCode
 import xlrd
 import datetime
-from Oracle_helper import oracle_helper
+from Oracle_helper import *
 
-h=oracle_helper('dsjky/quickhigh@192.168.2.105:1521/DSJKY')
+h=Oracle_helper('dsjky/quickhigh@192.168.2.105:1521/DSJKY')
 data= xlrd.open_workbook('D:\公司文档\客运物资管理信息系统\物资系统2.0\报表补充170504\锦州.xls')
 table = data.sheets()[0]
 # print(len(data.sheets()))
