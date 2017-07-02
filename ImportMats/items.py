@@ -42,7 +42,7 @@ def CreatSql():
 
 def Start():
     table = ReadExcel()
-    file_object = open('items_sql.txt', 'w+')
+    file_object = open('items_sql.txt', 'w+',encoding="utf-8")
     try:
         for i in range(table.nrows-1):
             sql='''

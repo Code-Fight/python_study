@@ -1,0 +1,55 @@
+
+            insert into TB_FDN_MATERIALS_PRODUCT(DWMC,INSERT_USER,GSZD)VALUES ('安庆明欣实业有限公司','interface','test');
+            
+            insert into TB_FDN_MATERIALS_PRODUCT(DWMC,INSERT_USER,GSZD)VALUES ('白城列车段服务公司','interface','');
+            
+            insert into TB_FDN_MATERIALS_PRODUCT(DWMC,INSERT_USER,GSZD)VALUES ('白城市金华建材经销有限公司','interface','');
+            
+            insert into TB_FDN_MATERIALS_PRODUCT(DWMC,INSERT_USER,GSZD)VALUES ('白城市天意建材有限公司','interface','');
+            
+            insert into TB_FDN_MATERIALS_PRODUCT(DWMC,INSERT_USER,GSZD)VALUES ('本溪市顺通物资有限公司','interface','');
+            
+            insert into TB_FDN_MATERIALS_PRODUCT(DWMC,INSERT_USER,GSZD)VALUES ('朝阳区军盛物资经销处','interface','');
+            
+            insert into TB_FDN_MATERIALS_PRODUCT(DWMC,INSERT_USER,GSZD)VALUES ('东方先导（吉林）糖酒有限公司','interface','');
+            
+            insert into TB_FDN_MATERIALS_PRODUCT(DWMC,INSERT_USER,GSZD)VALUES ('吉林省汇泽包装材料有限公司','interface','');
+            
+            insert into TB_FDN_MATERIALS_PRODUCT(DWMC,INSERT_USER,GSZD)VALUES ('吉林省优特斯实业有限公司','interface','');
+            
+            insert into TB_FDN_MATERIALS_PRODUCT(DWMC,INSERT_USER,GSZD)VALUES ('吉林市铁信商贸有限公司','interface','');
+            
+            insert into TB_FDN_MATERIALS_PRODUCT(DWMC,INSERT_USER,GSZD)VALUES ('吉林市铁信商贸有限公司','interface','');
+            
+            insert into TB_FDN_MATERIALS_PRODUCT(DWMC,INSERT_USER,GSZD)VALUES ('江苏新美达轨道车辆配件有限公司','interface','');
+            
+            insert into TB_FDN_MATERIALS_PRODUCT(DWMC,INSERT_USER,GSZD)VALUES ('江苏亚美日用化工有限公司','interface','');
+            
+            insert into TB_FDN_MATERIALS_PRODUCT(DWMC,INSERT_USER,GSZD)VALUES ('宽城区昌晟物资经销处','interface','');
+            
+            insert into TB_FDN_MATERIALS_PRODUCT(DWMC,INSERT_USER,GSZD)VALUES ('宽城区华正晨光五金百货经销处','interface','');
+            
+            insert into TB_FDN_MATERIALS_PRODUCT(DWMC,INSERT_USER,GSZD)VALUES ('宽城区华正市场阳光五金百货经销处','interface','');
+            
+            insert into TB_FDN_MATERIALS_PRODUCT(DWMC,INSERT_USER,GSZD)VALUES ('宽城区泰晟物资经销处','interface','');
+            
+            insert into TB_FDN_MATERIALS_PRODUCT(DWMC,INSERT_USER,GSZD)VALUES ('辽宁森普实业有限公司','interface','');
+            
+            insert into TB_FDN_MATERIALS_PRODUCT(DWMC,INSERT_USER,GSZD)VALUES ('沈铁松原三江港实业集团有限公司开发区产业园分公司','interface','');
+            
+            insert into TB_FDN_MATERIALS_PRODUCT(DWMC,INSERT_USER,GSZD)VALUES ('沈阳布莱迪机电设备有限公司','interface','');
+            
+            insert into TB_FDN_MATERIALS_PRODUCT(DWMC,INSERT_USER,GSZD)VALUES ('沈阳紫燕沙布艺有限公司','interface','');
+            
+            insert into TB_FDN_MATERIALS_PRODUCT(DWMC,INSERT_USER,GSZD)VALUES ('铜陵方正塑业科技有限公司','interface','');
+            
+            insert into TB_FDN_MATERIALS_PRODUCT(DWMC,INSERT_USER,GSZD)VALUES ('雄县京铁德实利包装制品有限公司','interface','');
+            
+            insert into TB_FDN_MATERIALS_PRODUCT(DWMC,INSERT_USER,GSZD)VALUES ('长春圣鹿洗涤用品有限公司','interface','');
+            
+            insert into TB_FDN_MATERIALS_PRODUCT(DWMC,INSERT_USER,GSZD)VALUES ('长春市福吉顺经贸有限责任公司','interface','');
+            
+            insert into TB_FDN_MATERIALS_PRODUCT(DWMC,INSERT_USER,GSZD)VALUES ('长春双安共盈物资有限公司','interface','');
+            
+            insert into TB_FDN_MATERIALS_PRODUCT(DWMC,INSERT_USER,GSZD)VALUES ('长春铁路分局长春列车段服务公司','interface','');
+            

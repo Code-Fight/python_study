@@ -5,8 +5,8 @@ import OracleHelper
 
 # base params
 FilePath = 'D:\公司文档\客运物资管理信息系统\各站段基础数据\import.xlsx'
-# warehouse in sheet 0
-sheet = 1
+# subject in sheet 2
+sheet = 4
 
 ys_type = {
     "应税": "1",
@@ -42,18 +42,19 @@ def CreatSql():
 
 def Start():
     table = ReadExcel()
-    file_object = open('warehouse_sql.txt', 'w+',encoding="utf-8")
+    file_object = open('subject_sql.txt', 'w+', encoding="utf-8")
     try:
         for i in range(table.nrows-1):
             sql = '''
-            insert into TB_FDN_MATERIALS_WAREHOUSE(NAME,CODE,YS,DW_CODE,DW_NAME)VALUES ('%s','%s','%s','%s','%s');
+            insert into TB_FDN_MATERIALS_SUBJECT(CODE,NAME,TRAIN_CODE,DEP_CODE,DEP_NAME,INSERT_USER)VALUES ('%s','%s','%s','%s','%s','%s');
             ''' % (
-                str(table.row_values(i+1)[0]).replace('\xa0', '').strip(),
-                str(table.row_values(i+1)[1]).replace('\xa0', '').strip(),
-                ys_type[str(table.row_values(i + 1)[2]).replace('\xa0', '').strip()],
-                str(table.row_values(i+1)[3]).replace('\xa0', '').strip(),
-                str(table.row_values(i+1)[4]).replace('\xa0', '').strip()
-                ,
+                str(table.row_values(i + 1)[0]).replace('\xa0', '').strip(),
+                str(table.row_values(i + 1)[1]).replace('\xa0', '').strip(),
+                str(table.row_values(i + 1)[2]).replace('\xa0', '').strip(),
+                str(table.row_values(i + 1)[3]).replace('\xa0', '').strip(),
+                str(table.row_values(i + 1)[4]).replace('\xa0', '').strip(),
+                'interface',
+
             )
 
             file_object.write(sql)
