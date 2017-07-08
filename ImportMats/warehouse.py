@@ -49,7 +49,7 @@ def Start():
             insert into TB_FDN_MATERIALS_WAREHOUSE(NAME,CODE,YS,DW_CODE,DW_NAME)VALUES ('%s','%s','%s','%s','%s');
             ''' % (
                 str(table.row_values(i+1)[0]).replace('\xa0', '').strip(),
-                str(table.row_values(i+1)[1]).replace('\xa0', '').strip(),
+                int(float(str(table.row_values(i+1)[1]).replace('\xa0', '').strip())),
                 ys_type[str(table.row_values(i + 1)[2]).replace('\xa0', '').strip()],
                 str(table.row_values(i+1)[3]).replace('\xa0', '').strip(),
                 str(table.row_values(i+1)[4]).replace('\xa0', '').strip()

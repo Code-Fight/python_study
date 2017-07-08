@@ -46,7 +46,7 @@ def Start():
     try:
         for i in range(table.nrows-1):
             sql='''
-            insert into TB_FDN_MATERIALS_CARD(WZM,WZBM,GGXH,JLDW,HSDJ,WZLB_CODE,WZLB_NAME,ITEMCATEGORY,XXJS,MAX_CBDL,MIN_CBDL,GSDW_CODE,GSDW_NAME)VALUES ('%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s');
+            insert into TB_FDN_MATERIALS_CARD(WZM,WZBM,GGXH,JLDW,HSDJ,WZLB_CODE,WZLB_NAME,ITEMCATEGORY,XXJS,MAX,MIN,GSDW_CODE,GSDW_NAME)VALUES ('%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s');
             '''%(
                 str(table.row_values(i+1)[0]).replace('\xa0', '').strip(),
                 str(table.row_values(i+1)[1]).replace('\xa0', '').strip(),

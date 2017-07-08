@@ -53,8 +53,7 @@ def Start():
                 str(table.row_values(i + 1)[2]).replace('\xa0', '').strip(),
                 str(table.row_values(i + 1)[3]).replace('\xa0', '').strip(),
                 str(table.row_values(i + 1)[4]).replace('\xa0', '').strip(),
-                'interface',
-
+                'interface'
             )
 
             file_object.write(sql)
